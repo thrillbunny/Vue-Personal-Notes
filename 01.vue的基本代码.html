@@ -37,8 +37,7 @@
       <p v-cloak>{{ msg }}</p>
       <h4 v-text='msg'></h4>  
 
-      v-text 不会出现闪烁问题 <br>
-      v-txt会覆盖元素中原本的内容，但是插值表达式只会替换自己的占位符不会把整个内容清空
+      v-text 会覆盖元素中原本的内容，但是插值表达式只会替换自己的占位符不会把整个内容清空
 
       <br><br><br>
 
@@ -53,7 +52,7 @@
 
 
 
-      v-bind 是vue中提供的绑定属性的指令 v-bind会把引号中的内容当成表达式
+      v-bind 是 vue 中提供的绑定属性的指令 v-bind 会把引号中的内容当成表达式
       <br><br><br>
       <input type="button" value="Button1" v-bind:title='mytitle + "123"'>  这个标签用v-blind生成   <br> 
       <input type="button" value="Button2" :title='mytitle + "123"'>  这个Button由:title（简写）绑定生成   <br>
